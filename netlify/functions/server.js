@@ -12,8 +12,8 @@ app.use(express.json());
 app.use("/photos", photosRouter);
 app.use("/tags", tagsRouter);
 
-app.listen(process.env.PORT || 8080, () =>
-    console.log(`Express server listening on port ${process.env.PORT || 8080}`)
-);
+// app.listen(process.env.PORT || 8080, () =>
+//     console.log(`Express server listening on port ${process.env.PORT || 8080}`)
+// );
 
 export const handler = serverless(app);
