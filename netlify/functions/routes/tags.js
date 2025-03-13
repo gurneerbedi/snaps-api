@@ -1,5 +1,5 @@
 import express from "express";
-import { readFromFile, writeToFile } from "./fsUtils";
+import { readFromFile, writeToFile } from "../fsUtils";
 
 const tagsRouter = express.Router();
 

@@ -1,5 +1,5 @@
 import express from "express";
-import { readFromFile, writeToFile } from "./fsUtils";
+import { readFromFile, writeToFile } from "../fsUtils";
 import { v4 } from "uuid";
 
 const photosRouter = express.Router();
