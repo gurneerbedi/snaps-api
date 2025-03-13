@@ -10,8 +10,8 @@ app.use(cors());
 app.use(express.json());
 console.log("Photos Router:", photosRouter);
 console.log("Tags Router:", tagsRouter);
-app.use("/photos", photosRouter);
-app.use("/tags", tagsRouter);
+app.use("/photos", photosRouter.default);
+app.use("/tags", tagsRouter.default);
 
 // app.listen(process.env.PORT || 8080, () =>
 //     console.log(`Express server listening on port ${process.env.PORT || 8080}`)
