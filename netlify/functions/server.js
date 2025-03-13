@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
-import photosRouter from "../functions/photos.js";
-import tagsRouter from "../../routes/tags.js";
+import photosRouter from "./photos.js";
+import tagsRouter from "./tags.js";
 import serverless from "serverless-http";
 
 
