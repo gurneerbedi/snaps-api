@@ -8,15 +8,15 @@ const app = express();
 app.use(express.static("public"));
 app.use(cors());
 app.use(express.json());
-
+console.log("Photos Router:", photosRouter);
+console.log("Tags Router:", tagsRouter);
 app.use("/photos", photosRouter);
 app.use("/tags", tagsRouter);
 
 // app.listen(process.env.PORT || 8080, () =>
 //     console.log(`Express server listening on port ${process.env.PORT || 8080}`)
 // );
-console.log("Photos Router:", photosRouter);
-console.log("Tags Router:", tagsRouter);
+
 
 
 export const handler = serverless(app);
